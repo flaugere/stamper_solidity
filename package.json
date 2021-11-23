@@ -1,0 +1,25 @@
+{
+  "name": "stamper_solidity",
+  "version": "1.0.0",
+  "description": "Stamper contracts",
+  "main": "truffle-config.js",
+  "author": "David FLAUGERE",
+  "license": "ISC",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "lint": "solhint --fix contracts/*.sol",
+    "test:local": "truffle test",
+    "test:kovan": "truffle migrate --network kovan"
+  },
+  "devDependencies": {
+    "ganache-cli": "^6.12.2",
+    "solhint": "^3.3.6",
+    "truffle": "^5.4.14",
+    "truffle-hdwallet-provider": "^1.0.17"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
+}
